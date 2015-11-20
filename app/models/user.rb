@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
   has_attached_file :photo
+  validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
+
   has_secure_password
 end
