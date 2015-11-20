@@ -27,6 +27,7 @@ gem 'bcrypt', '~> 3.1.7'
 # gems added for clippy
 gem 'paperclip'
 gem 'aws-sdk'
+gem 'puma'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
