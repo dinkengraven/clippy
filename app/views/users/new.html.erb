@@ -1,0 +1,17 @@
+<%= form_for(@user, multipart: true) do |f| %>
+  <div class="field">
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :photo %>
+    <%= f.file_field :photo %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Create account' %>
+  </div>
+<% end %>
